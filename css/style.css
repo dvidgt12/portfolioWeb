@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Fira+Code:wght@300..700&display=swap');
+
+:root{
+    --color-principal: #000;
+    --verde-lima: #12ff00;
+    --blanco: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--blanco);
+    font-family: "Fira Code", Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: var(--color-principal);
+}
+header{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+
+    padding: 0 2%;
+    position: fixed;
+    z-index: 9;
+}
+
+.logo img{
+    min-width: 7%;
+    width: 8%;
+    &:hover{
+        filter: drop-shadow(0 10px 3px var(--verde-lima));
+    }
+}
+.menu{
+    width: 80%;
+    display: flex;
+    justify-content: right;
+}
+.menu ul li{
+    display: inline;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+
+    &:hover{
+        text-shadow: var(--verde-lima) 0px 10px 5px;
+    }
+}
+
+/* Cuerpo de la web */
+.hero{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+.hero .img{
+    display: flex;
+    justify-content: right;
+}
+.hero .img img{
+    border-radius: 1000px;
+    max-width: 60%;
+    display: flex;
+    justify-content: right;
+}
+.content{
+    max-width: 60%;
+}
+.content p{
+    font-size: .8rem;
+    max-width: 70%;
+}
